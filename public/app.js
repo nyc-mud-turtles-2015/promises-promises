@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
   ajaxGet('/word/n')
   .then(function(serverResponse){
     // serverResponse because that's how we resolved the promise above    
-    return arg + ' H. ' ;
+    return serverResponse + ' H. ' ;
   }).then(function(arg){
     // the arg here is the return value of the prior function in the then 
     // chain. This time round we'll return a promise of a value
